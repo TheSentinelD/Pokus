@@ -1,0 +1,15 @@
+---
+- name: 7z install z netu
+  hosts: Windows
+
+  tasks:
+   - name: Server stáhne soubor z netu
+     win_get_url:
+       url: 'https://www.7-zip.org/a/7z1805-x64.msi'
+       dest: 'C:\Ansible\7z1805-x64.msi'
+
+   - name: Nainstaluje stažený soubor
+     win_package:
+       product_id: '7z1805-x64.msi'
+       path: 'C:\Ansible\7z1805-x64.msi'
+       state: present
