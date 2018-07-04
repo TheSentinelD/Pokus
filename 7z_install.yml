@@ -1,6 +1,6 @@
 ---
 - name: 7z install z netu
-
+  hosts: all
   tasks:
    - name: Server stáhne soubor z netu
      win_get_url:
