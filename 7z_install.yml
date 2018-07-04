@@ -1,6 +1,5 @@
 ---
 - name: 7z install z netu
-  hosts: Windows
 
   tasks:
    - name: Server stáhne soubor z netu
