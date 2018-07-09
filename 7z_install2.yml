@@ -5,7 +5,7 @@
   tasks:
    - name: Server stáhne soubor z netu
      win_get_url:
-       url: "{{ adresa }}"
+       url: "{{ url_adresa }}"
        dest: "{{ cesta_instalacniho_souboru }}"
 
    - name: Nainstaluje stažený soubor
