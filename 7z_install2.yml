@@ -5,7 +5,7 @@
   tasks:
    - name: Server stáhne soubor z netu
      win_get_url:
-       url: "{{ adresa }}"
+       url: "{{ lookup('env', 'adresa') }}"
        dest: 'C:\Ansible\7z1805-x64.msi'
 
   # - name: Nainstaluje stažený soubor
