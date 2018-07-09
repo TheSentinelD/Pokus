@@ -1,16 +1,16 @@
 ﻿---
 - name: 7z install z netu
-  hosts: all
+  hosts: "{{ seznam_stanic }}"
   
   tasks:
    - name: Server stáhne soubor z netu
      win_get_url:
        url: "{{ adresa }}"
-       dest: "{{ misto_ulozeni }}"
+       dest: "{{ cesta_instalacniho_souboru }}"
 
    - name: Nainstaluje stažený soubor
      win_package:
        product_id: "{{ id_produktu }}"
-       path: "{{ misto_ulozeni }}"
+       path: "{{ cesta_instalacniho_souboru }}"
        state: present
 
