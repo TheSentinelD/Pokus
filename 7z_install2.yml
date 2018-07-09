@@ -1,7 +1,7 @@
 ﻿---
 - name: 7z install z netu
   vars: 
-   machines: Windows
+   machines: 192.168.150.202
   hosts: "{{ machines }}"
   
   tasks:
