@@ -1,6 +1,8 @@
 ﻿---
 - name: 7z install z netu
   hosts: all
+  vars: 
+   adresa: 'https://www.7-zip.org/a/7z1805-x64.msi'
   
   tasks:
    - name: Server stáhne soubor z netu
