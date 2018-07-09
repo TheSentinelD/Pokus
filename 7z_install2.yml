@@ -1,7 +1,7 @@
 ﻿---
 - name: 7z install z netu
   vars: 
-   machines: 192.168.150.202
+   machines: Vpc-david-ch.ccv.cz
   hosts: "{{ machines }}"
   
   tasks:
