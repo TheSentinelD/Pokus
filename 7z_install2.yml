@@ -1,7 +1,9 @@
 ﻿---
 - name: 7z install z netu
-  hosts: "{{ lookup('env', 'machines') }}"
-
+  vars: 
+   machines: Windows
+  hosts: "{{ machines }}"
+  
   tasks:
    - name: Server stáhne soubor z netu
      win_get_url:
