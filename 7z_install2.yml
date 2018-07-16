@@ -1,6 +1,6 @@
 ﻿---
 - name: 7z install z netu
-  hosts: all
+  hosts: "{{ seznam_stanic }}"
   
   tasks:
    - name: Server stáhne soubor z netu
