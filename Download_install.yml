@@ -6,6 +6,7 @@
    - name: Vytvoří složku Ansible
      win_file: 
        path: 'C:\Ansible'
+       state: directory
        
    - name: Server stáhne soubor z netu
      win_get_url:
