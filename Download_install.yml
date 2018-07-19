@@ -3,6 +3,10 @@
   hosts: "{{ seznam_stanic }}"
   
   tasks:
+   - name: Vytvoří složku Ansible
+     win_file: 
+       path: C:\Ansible
+       
    - name: Server stáhne soubor z netu
      win_get_url:
        url: "{{ url_adresa }}"
